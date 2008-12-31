@@ -10,15 +10,15 @@ connection control features.
 Runtime requirements:
   cygwin-1.5.25-15
   jack-audio-connection-kit-0.109.2-1
-  libQtCore4-4.4.1-1
-  libQtGui4-4.4.1-1
-  libQtXml4-4.4.1-1
-  libX11_6-1.1.3-1
+  libQtCore4-4.4.2-1
+  libQtGui4-4.4.2-1
+  libQtXml4-4.4.2-1
+  libX11_6-1.1.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
   binutils-20080624-2
-  cygport-0.4.0-1
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
@@ -34,15 +34,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack qjackctl-0.3.3-X-src.tar.bz2
+  unpack qjackctl-0.3.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./qjackctl-0.3.3-X.cygport all
+  cygport ./qjackctl-0.3.4-X.cygport all
 
 This will create:
-  /usr/src/qjackctl-0.3.3-X-src.tar.bz2
-  /usr/src/qjackctl-0.3.3-X.tar.bz2
+  /usr/src/qjackctl-0.3.4-X-src.tar.bz2
+  /usr/src/qjackctl-0.3.4-X.tar.bz2
 
 -------------------------------------------
 
@@ -50,17 +50,20 @@ Files included in the binary package:
 
   /usr/bin/qjackctl.exe
   /usr/share/applications/qjackctl.desktop
-  /usr/share/doc/qjackctl-0.3.3/AUTHORS
-  /usr/share/doc/qjackctl-0.3.3/COPYING
-  /usr/share/doc/qjackctl-0.3.3/ChangeLog
-  /usr/share/doc/qjackctl-0.3.3/INSTALL
-  /usr/share/doc/qjackctl-0.3.3/README
-  /usr/share/doc/qjackctl-0.3.3/TODO
+  /usr/share/doc/qjackctl-0.3.4/AUTHORS
+  /usr/share/doc/qjackctl-0.3.4/COPYING
+  /usr/share/doc/qjackctl-0.3.4/ChangeLog
+  /usr/share/doc/qjackctl-0.3.4/INSTALL
+  /usr/share/doc/qjackctl-0.3.4/README
+  /usr/share/doc/qjackctl-0.3.4/TODO
   /usr/share/pixmaps/qjackctl.png
 
 ------------------
 
 Port Notes:
+
+----- version 0.3.4-1 -----
+Version bump.
 
 ----- version 0.3.3-1 -----
 Initial release for Cygwin.
