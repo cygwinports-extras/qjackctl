@@ -1,0 +1,26 @@
+inherit qt4
+
+NAME="qjackctl"
+VERSION=0.3.4
+RELEASE=1
+CATEGORY="Audio"
+SUMMARY="JACK Audio Connection Kit GUI"
+DESCRIPTION="QjackCtl is a simple Qt application to control the JACK sound
+server daemon.  It provides a simple GUI dialog for setting several JACK
+daemon parameters, which are properly saved between sessions, and a way to
+control of the status of the audio server daemon. With time, this primordial
+interface has become richer by including a enhanced patchbay and connection
+control features."
+HOMEPAGE="http://qjackctl.sourceforge.net/"
+SRC_URI="mirror://sourceforge/qjackctl/qjackctl-${VERSION}.tar.gz"
+
+REQUIRES="jack-audio-connection-kit"
+
+DIFF_EXCLUDES="*.ts"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf --disable-alsa-seq
+	cygmake -j1
+}
